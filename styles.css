@@ -1,7 +1,16 @@
-body {
-    background: url('./images/BG.png'), lightgray 50% / cover no-repeat;
-    border-radius: 0px 10px 14px 0px;
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Montserrat&family=Poppins:wght@300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
 }
+body {
+    background: url('./images/BG\ copy.png'), lightgray 50% / cover no-repeat;
+    border-radius: 0px 10px 14px 0px;
+    width: 1600px;
+    height: 2647px;
+}
+
 
 nav {
     display: flex;
@@ -13,6 +22,7 @@ nav > img {
     height: 172px;
     flex-shrink: 0;
     margin-right: 174px;
+    margin-left: 62px;
 }
 
 nav > ul {
@@ -31,8 +41,12 @@ nav ul >li > a {
     font-family: Quicksand;
     font-size: 22px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     line-height: normal;
+}
+
+#home {
+    font-weight: 700;
 }
 
 nav button {
@@ -52,4 +66,77 @@ nav button {
     line-height: normal;
     background: transparent;
     cursor: pointer;
+}
+
+/* --------Header section------ */
+.intro {
+    margin-top: 88px;
+    margin-left: 95px;
+}
+
+.intro-divs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-header h1 {
+    width: 899px;
+    height: 199px;
+    color: rgba(71, 53, 37, 0.90);
+    font-family: Jost;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110.543%; /* 88.434px */
+}
+
+.intro-header p {
+    color: rgba(0, 0, 0, 0.65);
+    font-family: Jost;
+    font-size: 27px;
+    margin-top: -60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.intro-image img {
+    width: 593px;
+    height: 633px;
+    border-radius: 110px;
+    margin-right: 100px;
+}
+
+
+#menu {
+    width: 147px;
+    height: 67px;
+    margin-top: 47px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(71, 53, 37, 0.78);
+    color: #FFF;
+    font-family: Quicksand;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 21px;
+}
+
+#discount {
+    color: rgba(71, 53, 37, 0.90);
+    font-family: Quicksand;
+    font-size: 22px;
+    margin-top: 47px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 147px;
+    height: 67px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #3A2818;
+    background: transparent;
 }
